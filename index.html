@@ -13,13 +13,18 @@
 <body>
     <div class="container">
         <h1>Hi, there!</h1>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary">Notifications <span class="badge text-bg-secondary">4</span></button>
         <button type="button" class="btn btn-warning text-white">Warning</button>
         <button type="button" class="btn btn-outline-secondary">Secondary</button>
         <button type="button" class="btn btn-primary btn-lg">Large button</button>
         <button type="button" class="btn btn-secondary btn-sm">Small button</button>
-        <button type="button" class="btn btn-outline-danger" disabled>Close</button>
-        <input class="btn btn-warning" type="reset" value="Reset">
+        <button type="button" class="btn btn-outline-info position-relative">
+            Alert
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+        </button>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias reiciendis nesciunt ut commodi adipisci! Harum, vitae laboriosam. Fugit deserunt facilis iste eveniet, rem porro, ratione maiores et quod odio excepturi? Quo, cum minus temporibus optio, architecto accusamus provident non in tempore nihil, voluptatibus assumenda vitae nam hic nostrum adipisci eos. Fugit nulla, similique obcaecati laborum officiis provident aperiam iure praesentium. Dignissimos obcaecati explicabo libero eos ex soluta corrupti aliquid, amet a repudiandae cupiditate, eius nostrum veniam blanditiis nemo repellat qui voluptatibus est molestias. Sit eaque, est beatae totam tempore ducimus!</p>
         <div class="d-grid gap-2">
             <button class="btn btn-primary" type="button">Button</button>
@@ -42,7 +47,20 @@
               Someone famous in <cite title="Source Title">Source Title</cite>
             </figcaption>
         </figure>
+
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-primary">Show</button>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+
+        <button class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
     </div>
+
+   
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
